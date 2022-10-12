@@ -1,10 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 
 const SolutionsPage = () => {
   return (
     <>
-      <Navbar />
       <main>
         <h1>Our Solutions</h1>
         <h3>

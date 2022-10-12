@@ -1,10 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 
 const AboutPage = () => {
   return (
     <>
-      <Navbar />
       <main>
         <h1>About Us</h1>
         <h3>
@@ -18,4 +16,14 @@ const AboutPage = () => {
 
 export default AboutPage
 
-export const Head = () => <title>Green Doctors Programme - About</title>
+export const Head = () => (
+  <>
+    <title>Green Doctors Programme - About</title>
+    <link
+      rel='stylesheet'
+      href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css'
+      integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor'
+      crossorigin='anonymous'
+    />
+  </>
+)

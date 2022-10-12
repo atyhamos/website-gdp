@@ -1,10 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 
 const IndexPage = () => {
   return (
     <>
-      <Navbar />
       <main>
         <h1>Welcome to Green Doctors Programme!</h1>
         <h3>
@@ -19,4 +17,14 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Green Doctors Programme</title>
+export const Head = () => (
+  <>
+    <title>Green Doctors Programme</title>
+    <link
+      rel='stylesheet'
+      href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css'
+      integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor'
+      crossorigin='anonymous'
+    />
+  </>
+)
