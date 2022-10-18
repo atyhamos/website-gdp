@@ -1,16 +1,8 @@
 import { Link } from 'gatsby'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import ReactGA from 'react-ga'
-
-const TRACKING_ID = 'UA-245233807-1'
-ReactGA.initialize(TRACKING_ID)
 
 const NavigationBar = () => {
-  // Refactor and use proper React Router instead (https://github.com/remix-run/react-router)
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [])
   return (
     <Navbar
       expand='lg'
